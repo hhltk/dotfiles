@@ -51,3 +51,4 @@ autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
 set guifont=monospace\ 18
 set spell
 au BufRead,BufNewFile *.md setlocal textwidth=80 cc=81
+set nojoinspaces
