@@ -35,6 +35,7 @@ filetype plugin indent on
 set clipboard=unnamedplus
 set list listchars=tab:\ \ 
 set guifont=monospace\ 18
+set spell spelllang=en_us
 
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd BufNewFile main.cpp read ~/codes/sync/template.cpp | normal ggdd
@@ -49,4 +50,4 @@ function! s:insert_gates()
 endfunction
 autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
 
-au BufRead,BufNewFile *.md setlocal textwidth=80 cc=81 nojs spell
+au BufRead,BufNewFile *.md setlocal textwidth=80 cc=81 nojs
